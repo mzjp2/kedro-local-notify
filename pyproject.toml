@@ -1,8 +1,17 @@
 [tool.poetry]
 name = "kedro-local-notify"
-version = "0.1.0"
+version = "0.1.1"
 description = "A kedro plugin that interacts with your local notifications"
+license = "MIT"
 authors = ["Zain Patel <zain.patel06@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/mzjp2/kedro-local-notify"
+repository = "https://github.com/mzjp2/kedro-local-notify"
+keywords = ["kedro", "notification"]
+classifiers = [
+    "Framework :: Kedro"
+]
+
 
 [tool.poetry.dependencies]
 python = ">=3.7, <3.9"
