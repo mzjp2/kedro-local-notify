@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "kedro-local-notify"
+version = "0.1.0"
+description = "A kedro plugin that interacts with your local notifications"
+authors = ["Zain Patel <zain.patel06@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7, <3.9"
+kedro = "^0.17.0"
+pync = "^2.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^20.8b1"
+pylint = "^2.6.0"
+pre-commit = "^2.10.1"
+
+[tool.poetry.plugins."kedro.hooks"]
+kedro_local_notify = "kedro_local_notify.hook:hooks"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
