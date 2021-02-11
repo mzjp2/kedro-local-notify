@@ -31,7 +31,7 @@ Or come back to see your pipeline finished running an hour ago and you have noth
 By default, notifications will only trigger if the pipeline has been running for more than 1 minute. You can change this thresholf for notifying you by setting the `KEDRO_LOCAL_NOTIFY_THRESHOLD` environment variable to be the number of seconds of pipeline run time before a notification is trigerred. The default is:
 
 ```console
-$ export KEDRO_LOCAL_NOTIFY=60
+$ export KEDRO_LOCAL_NOTIFY_THRESHOLD=60
 ```
 
 note that this environment variable needs to be set in the same shell that you're trigerring the Kedro pipeline run in.
